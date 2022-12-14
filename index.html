@@ -7,24 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Website</title>
 </head>
-<link rel="stylesheet" href="nav.css">
-<script src="https://kit.fontawesome.com/a35bec21e0.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
 
-<body>
-    <!-- ********************NAV-BAR********************************************* -->
-    <nav class="navbar">
-        <div class="logo">J.CREW</div>
-        <div class="nav-items">
-            <li>Gifts</li>
-            <li>New</li>
-            <li>Women</li>
-            <li>Men</li>
-            <li>Kids</li>
-            <li>Cashmere</li>
-            <li>Home</li>
-            <li>Stories</li>
-            <li>Sale</li>
-        </div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://kit.fontawesome.com/a35bec21e0.js" crossorigin="anonymous"></script>
+    
+    <body>
+        <!-- ********************NAV-BAR********************************************* -->
+        <nav class="navbar">
+            <div class="logo">J.CREW</div>
+            <div class="nav-items">
+                <li>Gifts</li>
+                <li >New</li>
+                <li onMouseOver={unHideWomenBox()} onMouseLeave={hideWomenBox()}>Women</li>
+                <li>Men</li>
+                <li>Kids</li>
+                <li>Cashmere</li>
+                <li>Home</li>
+                <li>Stories</li>
+                <li>Sale</li>
+            </div>
+            <!-- <div class="demo hidden" onMouseLeave={hideGiftBox()} onMouseOver={unHideGiftBox()}>></div> -->
         <div class="nav-right">
             <div class="search-bar">
                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
@@ -128,10 +139,11 @@
     <div class="container">
 
         <div class="first">
-            <img src="https://www.jcrew.com/brand_creative/2022/202204-Apr/logo_jcrew_collective_20220315_blk.png?imformat=generic">
-            <h3 id="community">Meet our creative community  -</h3>
+            <img
+                src="https://www.jcrew.com/brand_creative/2022/202204-Apr/logo_jcrew_collective_20220315_blk.png?imformat=generic">
+            <h3 id="community">Meet our creative community -</h3>
         </div>
-       
+
 
         <div class="second">
             <div>
@@ -154,15 +166,16 @@
                 <h1 class="card-h1">A Cashmere Remix with Lucy Williams</h1>
                 <h3 class="underline"><u>Shop her story</u></h3>
             </div>
-            
+
         </div>
 
 
-         <div class="third">
+        <div class="third">
             <div id="more-stories">More Stories</div>
             <div class="top-picks">
                 <div>
-                    <img src="https://www.jcrew.com/brand_creative/homepage2022/14-Dec3/gifcyb_w_agnetha.jpg" id="fix-image">
+                    <img src="https://www.jcrew.com/brand_creative/homepage2022/14-Dec3/gifcyb_w_agnetha.jpg"
+                        id="fix-image">
                     <h2 class="top-picks-text">Most wanted: limited-edition Barbour X<br> J.Crew Agnetha jacket</h2>
                     <h3 class="text-h3"><u>Get a closer look</u></h3>
                 </div>
@@ -182,11 +195,251 @@
                     <h3 class="text-h3"><u>Shop the video</u></h3>
                 </div>
             </div>
-         </div>
-     
-
+        </div>
     </div>
 
+    <!-- *********************************YOU'LL ALSO LOVE********************************** -->
+
+    <div class="you-also-love">
+        <div id="dress-also-love-text">You'll Also Love</div>
+        <div class="dress-image-cards">
+            <img src="https://www.jcrew.com/s7-img-facade/AZ972_HT1804?wid=376">
+            <img src="https://www.jcrew.com/s7-img-facade/AZ664_BL7664_m?wid=376">
+            <img src="https://www.jcrew.com/s7-img-facade/BD005_BK0001_m?wid=376">
+            <img src="https://www.jcrew.com/s7-img-facade/AB651_RD5371_m?wid=376">
+            <img src="https://www.jcrew.com/s7-img-facade/BF793_WW0699?wid=376">
+            <img src="https://www.jcrew.com/s7-img-facade/BB442_EE1055?wid=376">
+        </div>
+    </div>
+
+    <!-- ***********************SHOP-OUR-INSTAGRAM************************************ -->
+
+    <div class="shop-our-instagram">
+        <div id="instagram-text">Shop Our Instagram<br>(and join the fun with #injcrew)</div>
+        <div class="instagram-cards">
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/AZ972_HT1804?wid=376">
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/AZ664_BL7664_m?wid=376">
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/BD005_BK0001_m?wid=376">
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/AB651_RD5371_m?wid=376">
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/AB651_RD5371_m?wid=376">
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/AZ664_BL7664_m?wid=376">
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/AB651_RD5371_m?wid=376">
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/AB651_RD5371_m?wid=376">
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/AZ664_BL7664_m?wid=376">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ******************MORE-YOU-NEED-TO-SEE************************************************** -->
+
+    <div class="more-you-need-to-see">
+        <div id="see-text">More you need to see</div>
+        <div class="dress-image-cards2">
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/BD613_RD6052_m?wid=416">
+                <h3><u>Shop Women's Sweaters</u></h3>
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/BN161_YD2172_m?wid=416">
+                <h3><u>Shop Women's Shirt & Tops</u></h3>
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/BM312_PT3361_m?wid=416">
+                <h3><u>Shop Women's T-Shirt & Tank Tops</u></h3>
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/BM874_YD2455_m?wid=416">
+                <h3><u>Shop Women's Dresses & Jumpsuits</u></h3>
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/BM557_YD2455_m?wid=416">
+                <h3><u>Shop Women's Blazers</u></h3>
+            </div>
+            <div>
+                <img src="https://www.jcrew.com/s7-img-facade/BM874_YD2455_m?wid=416">
+                <h3><u>Shop Women's Pants</u></h3>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <hr>
+
+
+    <div class="help-box">
+        <div>@jcrew_help</div>
+        <div>1 434 565 4366</div>
+        <div>Email Us</div>
+    </div>
+
+    <!-- ********************************FOOTER*************************************************************** -->
+    <div class="footer">
+
+        <div class="help">
+            <div class="bold">Help</div>
+            <div>Customer Services</div>
+            <div>Track Order</div>
+            <div>Return & Exchanges</div>
+            <div>Shipping</div>
+            <div>International Orders</div>
+            <div>Contact</div>
+        </div>
+
+        <div class="Quick-links">
+            <div class="bold">Quick Links</div>
+            <div>Find a Store</div>
+            <div>Size Charts</div>
+            <div>Refer a Friend</div>
+            <div>Offer & Promotions</div>
+            <div>My favorites</div>
+        </div>
+
+        <div class="about-j-crew">
+            <div class="bold">About J.Crew</div>
+            <div>Our Story</div>
+            <div>Careers</div>
+            <div>Social Responsibility</div>
+            <div>California Transparency<br>Act/Modern Slavery Act</div>
+            <div>Investor Relations</div>
+            <div>Terms of Use</div>
+            <div>Privacy Policy</div>
+            <div>California Do Not Sell My<br>Personal Information</div>
+            <div>Diversity, Equity and Inclusion<br>at J.Crew Group</div>
+        </div>
+
+        <div class="signup-line">
+            <div class="bold">Like Being First?</div>
+            <div>Get can't-miss style news, before everybody else.</div>
+            <div class="sign-up">
+                <input type="e-mail" placeholder="Enter your email." id="input-signup">
+                <div id="signup-text">SIGN UP</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ///women part  -->
+
+
+
+    <div class="women-navbar hidden" onMouseLeave={hideWomenBox()} onMouseOver={unHideWomenBox()}>
+        <div class="all-text">
+            <div>
+                <div id="make-women-text">Women</div>
+                <div class="down-women">New Arrivals</div>
+                <div class="down-women" style="color: red;">Gifts</div>
+                <div class="down-women">Best Sellers</div>
+                <div class="down-women">Top Rated</div>
+                <div class="down-women">Brands We Love</div>
+                <div class="down-women">The Re-Imagined Shop</div>
+                <div class="down-women">Shop All</div>
+                <div class="down-women" style="color: red;">Sale</div>
+                <div class="make-women-text2">What to Shop Now</div>
+                <div class="down-womwn-2">The Gift Guide</div>
+                <div class="down-womwn-2">Olympia's Picks</div>
+                <div class="down-womwn-2">Marie Marot X J.Crew</div>
+                <div class="down-womwn-2">The Sun Shop</div>
+                <div class="down-womwn-2">The Ski Shop</div>
+                <div class="down-womwn-2">The Holiday Party Shop</div>
+                <div class="down-womwn-2">Statement Coats</div>
+                <div class="down-womwn-2">Tartan Everything</div>
+            </div>
+            <div>
+                <div class="make-women-text3">Clothing</div>
+                <div class="down-womwn-2">All Clothing</div>
+                <div class="down-womwn-2">Sweaters</div>
+                <div class="down-womwn-2">Shirt & Tops</div>
+                <div class="down-womwn-2">T-Shirts & Tank Tops</div>
+                <div class="down-womwn-2">Dresses & Jumpsuits</div>
+                <div class="down-womwn-2">Blazers</div>
+                <div class="down-womwn-2">Pants</div>
+                <div class="down-womwn-2">Denim</div>
+                <div class="down-womwn-2">Coats & Jackets</div>
+                <div class="down-womwn-2">Skirts</div>
+                <div class="down-womwn-2">Shorts</div>
+                <div class="down-womwn-2">Swimwear</div>
+                <div class="down-womwn-2">Sweatshirts & Sweatpants</div>
+                <div class="down-womwn-2">Active</div>
+                <div class="down-womwn-2">Matching Sets</div>
+                <div class="down-womwn-2">Pajamas & Intimates</div>
+                <div class="down-womwn-2">Suiting</div>
+                <div class="down-womwn-2">Maternity</div>
+            </div>
+            <div>
+                <div class="make-women-text3">Shoes & Boots</div>
+                <div class="down-womwn-2">All Shoes & Boots</div>
+                <div class="down-womwn-2">Winter Boots</div>
+                <div class="down-womwn-2">Boots</div>
+                <div class="down-womwn-2">Slippers</div>
+                <div class="down-womwn-2">Birkenstocks</div>
+                <div class="down-womwn-2">Flats</div>
+                <div class="down-womwn-2">Heels</div>
+                <div class="down-womwn-2">Sneakers</div>
+                <div class="accessories">Accessories</div>
+                <div class="down-womwn-2">All Accessories</div>
+                <div class="down-womwn-2">Jewelry</div>
+                <div class="down-womwn-2">Bags</div>
+                <div class="down-womwn-2">Hats, Scarves, & Gloves</div>
+                <div class="down-womwn-2">Accessories & More</div>
+                <div class="down-womwn-2">Candles, Beauty, & Home</div>
+                <div class="down-womwn-2">Hair</div>
+                <div class="down-womwn-2">Socks & Tights</div>
+                <div class="down-womwn-2">Belts</div>
+            </div>
+        </div>
+        <div class="women-image-card">
+            <div class="make-women-text4">Shops, Stories, & more</div>
+            <div class="give-flex">
+                <div>
+                    <img
+                        src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_m_img0.jpg">
+                    <h3>The Ski Shop</h3>
+                </div>
+                <div>
+                    <img
+                        src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_w_img1_new.jpg">
+                    <h3>The Sun Shop</h3>
+                </div>
+            </div>
+            <div class="give-flex2">
+                <div>
+                    <img src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_w_img2.jpg">
+                    <h3>Festive pj sets</h3>
+                </div>
+                <div>
+                    <img src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_w_img3.jpg">
+                    <h3>New sweaters,<br>new gifts</h3>
+                </div>
+                <div>
+                    <img src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_w_img4.jpg">
+                    <h3>Our warmest coats</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>
+<script src="index.js"></script>
