@@ -1,0 +1,649 @@
+/* ************NAV-BAR******************************************************** */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    /* border: 1px solid red; */
+    width: 100%;
+    position: fixed;
+    background-color: whitesmoke;
+    z-index: 2;
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+}
+
+.logo {
+    font-size: xx-large;
+ 
+}
+
+.nav-items {
+    list-style: none;
+    font-weight: 600;
+    font-size: small;
+
+}
+.nav-items :hover{
+   border-bottom: 2px solid black;
+}
+
+#gift-hover li:hover{
+    text-decoration: underline !important;
+}
+
+
+.nav-items {
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-right: 100px;
+    margin-top: 10px;
+    font-family: soleil, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    width: 30%;
+    margin-right: 5px;
+}
+
+.search-bar {
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.search-data {
+
+    border: none;
+    margin-left: 6px;
+    margin-top: 6px;
+    padding: 1px;
+}
+
+.sign-in {
+    list-style: none;
+    /* border: 1px solid red; */
+    margin-top: 2%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+.nav-right :hover{
+    border-bottom: 2px solid black;
+}
+
+
+.bag {
+    /* border: 4px solid red; */
+    margin-right: 20px;
+}
+
+/* ***********************************GIFTS SECTION*************************************** */
+
+#shopnow {
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 4%;
+    font-family: soleil, Helvetica, Arial, sans-serif;
+}
+
+.main {
+    text-align: center;
+}
+
+.banner-text {
+    position: absolute;
+    top: 35%;
+    color: white;
+}
+
+.gift-banner img {
+    width: 100%;
+}
+
+#J-Crew {
+    font-size: 70px;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-weight: lighter;
+    margin-left: 30%;
+    margin-top: 70px;
+}
+
+#below-j-crew {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: soleil, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 380px;
+    font-stretch: ultra-expanded;
+}
+
+.shop-for-cards {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-left: 250px;
+}
+
+.shop-for-cards div {
+    border: 1px solid gray;
+    color: black;
+    background-color: white;
+    font-family: soleil, Helvetica, Arial, sans-serif;
+    font-size: small;
+    padding: 13px 55px;
+}
+
+/* *********************************IMAGES-CARDS-SECTION*******************************************/
+
+.images-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#image2 {
+    height: 750px;
+
+}
+
+#image4 {
+    height: 708px;
+    width: 510px;
+}
+
+#image6 {
+    height: 750px;
+    width: 510px;
+
+}
+
+.image-skishop,
+.image-beachy {
+    width: 100%;
+}
+
+.text-1,
+.text-2 {
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 80px;
+    text-align: center;
+    color: white;
+    font-family: freight-big-pro, sans-serif;
+}
+
+#snowy,
+#beachy,
+#fact,
+#snooze,
+#NYE {
+    font-size: 30px;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+#visit-ski-shop,
+#visit-sun-shop,
+#bundle {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-3 {
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 80px;
+    text-align: center;
+    color: white;
+    font-family: freight-big-pro, sans-serif;
+}
+
+.text-4 {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 80px;
+    text-align: center;
+    color: white;
+    font-family: freight-big-pro, sans-serif;
+}
+
+#holiday-print,
+#new-arrivals,
+#party-shop {
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-5,
+.text-6 {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 80px;
+    text-align: center;
+    color: white;
+    font-family: freight-big-pro, sans-serif;
+}
+
+#coats {
+    font-size: 30px;
+    padding: 10px;
+    font-weight: lighter;
+    margin-left: 40px;
+}
+
+/* *******************************************Shop-New Arrivals******************************* */
+
+.new-arrivals {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    margin-left: 70px;
+}
+
+#shop-new-arrivals {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.shop-item {
+    border: 1px solid gray;
+    padding: 10px 20px;
+    font-weight: 800;
+}
+
+/* ********************************Big-Container*********************************************** */
+
+.container {
+    background-color: #f8f4ef;
+    padding-bottom: 80px;
+}
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.first img {
+    width: 15%;
+}
+
+#community {
+    margin-top: 160px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.second {
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    margin-left: 170px;
+}
+
+.second img {
+    width: 95%;
+}
+
+.card-h3 {
+    padding: 10px;
+    font-weight: lighter;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.card-h1 {
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 25px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.underline {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.top-picks {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 140px;
+
+}
+
+.top-picks img {
+    width: 90%;
+
+}
+
+#more-stories {
+    font-size: 45px;
+    margin-left: 140px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.top-picks-text {
+    padding: 10px;
+    font-weight: lighter;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.text-h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#fix-image {
+    height: 56%;
+    width: 80%;
+}
+
+/* <!-- *********************************YOU'LL ALSO LOVE********************************** --> */
+#dress-also-love-text {
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 3%;
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.dress-image-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin-left: 1.5%;
+}
+
+.dress-image-cards img {
+    width: 15%;
+}
+
+#see-text {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+
+}
+
+.dress-image-cards2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 1.5%;
+    cursor: pointer;
+}
+
+.dress-image-cards2 img {
+    width: 90%;
+    cursor: pointer;
+}
+
+.dress-image-cards2 h3 {
+    margin-top: 1%;
+    padding-top: 5%;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.more-you-need-to-see {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+#instagram-text {
+    text-align: center;
+    padding: 2%;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-weight: 500;
+}
+
+.instagram-cards {
+    width: 99%;
+    margin-left: 1.5%;
+}
+
+/* ***********************************************HELP-BOX************************************************************* */
+.help-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.help-box :hover {
+    text-decoration: underline;
+}
+
+/* *****************************************FOOTER******************************************************** */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    width: 100%;
+    background-color: rgb(240, 241, 242);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.help div,
+.Quick-links div,
+.about-j-crew div,
+.signup-line div {
+    padding: 3%;
+    cursor: pointer;
+}
+
+.help div:hover {
+    text-decoration: underline;
+}
+
+.Quick-links div:hover {
+    text-decoration: underline;
+}
+
+.about-j-crew div:hover {
+    text-decoration: underline;
+}
+
+
+.signup-line {
+    margin-right: 5%;
+}
+
+.sign-up {
+    display: flex;
+
+}
+
+#input-signup {
+    padding: 3%;
+    padding-right: 20%;
+    border: grey;
+}
+
+#signup-text {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding-right: 8%;
+    cursor: pointer;
+}
+.demo{
+    width : 100px;
+    height:100px;
+    background-color: red;
+}
+
+/* // navbar css  */
+
+
+/* *******************************GIFTS********************************************************* */
+
+.gifts-dropdown{
+    padding: 1%;
+    width: 20%;
+    background-color: white;
+}
+.gifts-dropdown div{
+    padding: 4px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+#gifts-bold{
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+
+/* **********************************New************************************************************** */
+
+.new {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  
+    /* width: 100%; */
+
+}
+#main{
+    display: flex;
+    width: 100%;
+    padding: 3%;
+  
+   
+}
+
+.new-images {
+    display: flex;
+    width: 100%;
+}
+
+.new-images img {
+    width: 80%;
+}
+.to-bold{
+    padding-bottom: 6%;
+    font-size: 25px;
+}
+.men-section{
+margin-top: 5%;
+}
+.gray{
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5%;
+}
+.options{
+    padding: 1.5%;
+    font-size: large;
+}
+/* ***************************************WOMEN********************************************* */
+
+* {
+    font-family: soleil, Helvetica, Arial, sans-serif;
+}
+.women-navbar{
+    display: flex;
+    width: 100%;
+    padding-top: 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index : 3;
+    position : absolute;
+    top: 7%;
+    background-color: rgb(245, 244, 244);
+}
+.up{
+    display: flex;
+    width: 100%;
+    padding-top: 2%;
+    border : 2px solid black;
+    z-index : 3;
+    position : absolute;
+}
+.women-image-card{
+    width: 40%;
+}
+.all-text{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.give-flex{
+    display: flex;
+    width: 90%;
+}
+.give-flex img{
+    width: 90%;
+}
+.give-flex2{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+
+}
+.give-flex2 img{
+    width: 90%;
+}
+#make-women-text{
+    font-size: 30px;
+    padding-bottom: 10%;
+}
+.down-women{
+    padding: 3%;
+    font-weight: bold;
+}
+.make-women-text2{
+    font-size: 25px;
+    padding-top: 18%;
+    padding-bottom: 10%;
+}
+.down-womwn-2{
+    padding: 3%;
+
+}
+.make-women-text3{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 14%;
+}
+.accessories{
+    font-size: 25px;
+    padding-top: 25%;
+    padding-bottom: 10%;
+    padding-left: 2%;
+}
+.make-women-text4{
+    font-size: 25px;
+    padding-bottom: 4%;
+    padding-top: 1%;
+}
+.hidden{
+    display: none;
+}
