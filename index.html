@@ -25,24 +25,24 @@
         <nav class="navbar">
             <div class="logo">J.CREW</div>
             <div class="nav-items">
-                <li>Gifts</li>
-                <li >New</li>
+                <li onMouseOver={unHideGiftBox()} onMouseLeave={hideGiftBox()}>Gifts</li>
+                <li onMouseOver={unHideNewBox()} onMouseLeave={hideNewBox()}>New</li>
                 <li onMouseOver={unHideWomenBox()} onMouseLeave={hideWomenBox()}>Women</li>
-                <li>Men</li>
+                <li onMouseOver={unHideMensBox()} onMouseLeave={hideMensBox()}>Men</li>
                 <li>Kids</li>
-                <li>Cashmere</li>
-                <li>Home</li>
-                <li>Stories</li>
-                <li>Sale</li>
+                <li onMouseOver={unHideCashmereBox()} onMouseLeave={hideCashmereBox()}>Cashmere</li>
+                <li onMouseOver={unHideHomeBox()} onMouseLeave={hideHomeBox()}>Home</li>
+                <li onMouseOver={unHideStoriesBox()} onMouseLeave={hideStoriesBox()}>Stories</li>
+                <li  onMouseOver={unHideSaleBox()} onMouseLeave={hideSaleBox()}>Sale</li>
             </div>
-            <!-- <div class="demo hidden" onMouseLeave={hideGiftBox()} onMouseOver={unHideGiftBox()}>></div> -->
+         
         <div class="nav-right">
             <div class="search-bar">
                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="Search J.Crew" class="search-data">
             </div>
 
-            <li class="sign-in">Sign In</li>
+            <li class="sign-in" onClick={signInPopup()}>Sign In</a></li>
             <i class="fa-sharp fa-solid fa-bag-shopping fa-2x bag"></i>
         </div>
     </nav>
@@ -338,7 +338,7 @@
 
 
     <!-- ///women part  -->
-
+   
 
 
     <div class="women-navbar hidden" onMouseLeave={hideWomenBox()} onMouseOver={unHideWomenBox()}>
@@ -436,6 +436,328 @@
             </div>
         </div>
     </div>
+
+    <!-- //New-nav-bar part -->
+
+    <div class="new-navbar hidden" onMouseLeave={hideNewBox()} onMouseOver={unHideNewBox()}>
+        <div class="new">
+            <div>
+                <div class="to-bold">Shop New Arrivals</div>
+                <div class="options">For Women</div>
+                <div class="options">For Men</div>
+                <div class="options">For Girls</div>
+                <div class="options">For Boys</div>
+            </div>
+            <div>
+                <div class="to-bold">What To Shop Now</div>
+                <div class="gray">WOMEN</div>
+                <div class="options">The Gift Guide</div>
+                <div class="options">Olympia's Picks</div>
+                <div class="options">Marie Marot's X J.Crew</div>
+                <div class="options">The Sun Shop</div>
+                <div class="options">The Ski Shop</div>
+                <div class="options">The Holiday Party Shop</div>
+                <div class="options">Statement Coats</div>
+                <div class="options">Tartan Everything</div>
+            </div>
+            <div class="men-section">
+                <div class="gray">MEN</div>
+                <div class="options">Peak Sweater Season</div>
+                <div class="options">The Holiday Party Shop</div>
+                <div class="options">Heavyweight Chamois Workshirts</div>
+                <div class="options">New Parka & Topcoats</div>
+                <div class="options">Source Materials</div>
+                <div class="options">Heritage 14 oz. Fleeze</div>
+            </div>
+        </div>
+        <div >
+            <div  class="to-bold">Bookmark these</div>
+            <div class="new-images">
+                <div>
+                    <img
+                        src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1206_flyouts_new_img0_new.jpg">
+                    <h3>The Holiday Party Shop</h3>
+                </div>
+                <div>
+                    <img
+                        src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1206_flyouts_new_img1.jpg">
+                    <h3>Peak sweater season</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ///Gift navbarpart/// -->
+
+    <div class=" gifts-dropdown gifts-dropdown-navbar hidden" onMouseLeave={hideGiftBox()} onMouseOver={unHideGiftBox()}>
+        <div id="gifts-bold">Gifts</div>
+        <div>For Women</div>
+        <div>For Men</div>
+        <div>For Girls</div>
+        <div>For Boys</div>
+        <div>For te Home</div>
+    </div>
+   
+    <!-- ////////////////Men-NAVBAR PART///////////////////////////// -->
+
+    <div class="men-navbar hidden" onMouseLeave={hideMensBox()} onMouseOver={unHideMensBox()}>
+        <div class="men-nav">
+        <div class="alltext">
+            <div>
+                <div id="make-men-text">Men</div>
+                <div class="down-men">New Arrivals</div>
+                <div class="down-men" style="color: red;">Gifts</div>
+                <div class="down-men">Best Sellers</div>
+                <div class="down-men">Top Rated</div>
+                <div class="down-men">Brands We Love</div>
+                <div class="down-men">The Re-Imagined Shop</div>
+                <div class="down-men">Shop All</div>
+                <div class="down-men" style="color: red;">Sale</div>
+                <div class="make-men-text2">What to Shop Now</div>
+                <div class="down-men-2">Peak Sweater Season</div>
+                <div class="down-men-2">The Holiday Party Shop</div>
+                <div class="down-men-2">Heavyweight Chamois Workshirts</div>
+                <div class="down-men-2">New Parkas & Topcoats</div>
+                <div class="down-men-2">Source Materials</div>
+                <div class="down-men-2">Heritage 14 Oz. Fleece</div>
+            </div>
+            <div>
+                <div class="make-men-text3">Clothing</div>
+                <div class="down-men-2">All Clothing</div>
+                <div class="down-men-2">Sweaters</div>
+                <div class="down-men-2">Coats & Jackets</div>
+                <div class="down-men-2">Casual Shirts</div>
+                <div class="down-men-2">Dress Shirts</div>
+                <div class="down-men-2">Pants & Chinos</div>
+                <div class="down-men-2">Denim</div>
+                <div class="down-men-2">Suits & Tuxedos</div>
+                <div class="down-men-2">Blazers</div>
+                <div class="down-men-2">Sweatshirts & Sweatpants</div>
+                <div class="down-men-2">Polos & Rugby</div>
+                <div class="down-men-2">T-Shirts</div>
+                <div class="down-men-2">Pajamas & Loungewear</div>
+                <div class="down-men-2">Shorts</div>
+                <div class="down-men-2">Swim</div>
+                <div class="down-men-2">Underwear & Boxers</div>
+            </div>
+            <div>
+                <div class="make-men-text3">Shoes & Sneakers</div>
+                <div class="down-men-2">All Shoes & Boots</div>
+                <div class="down-men-2">Sneakers</div>
+                <div class="down-men-2">Boots</div>
+                <div class="down-men-2">Dress Shoes</div>
+                <div class="down-men-2">Slippers</div>
+            
+                <div class="Accessories">Accessories</div>
+                <div class="down-men-2">All Accessories</div>
+                <div class="down-men-2">Scarves, Hats & Gloves</div>
+                <div class="down-men-2">Socks</div>
+                <div class="down-men-2">Belts</div>
+                <div class="down-men-2">Watches & Jewelry</div>
+                <div class="down-men-2">Bags & Wallets</div>
+                <div class="down-men-2">Sunglasses & Eyewear</div>
+                <div class="down-men-2">Candles, Grooming & Home</div>
+          
+            </div>
+        </div>
+        <div class="men-image-card">
+            <div class="make-men-text4">Shops, Stories, & more</div>
+            <div class="give-flex-men">
+                <div>
+                    <img
+                        src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_m_img0.jpg">
+                    <h3>Peak sweater season</h3>
+                </div>
+                <div>
+                    <img
+                        src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_m_img1.jpg">
+                    <h3>Mount Snow X J.Crew</h3>
+                </div>
+            </div>
+            <div class="give-flex-men-2">
+                <div>
+                    <img src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_w_img2.jpg">
+                    <h3>Lounge like you<br>mean it</h3>
+                </div>
+                <div>
+                    <img src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_m_img3.jpg">
+                    <h3>Cold-weather<br>necessities</h3>
+                </div>
+                <div>
+                    <img src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_m_img4.jpg">
+                    <h3>The Gift Guide</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ////////////////////////Cashmere-Navbar-part/////////////////////// -->
+    <div class="cashmere hidden" onMouseLeave={hideCashmereBox()} onMouseOver={unHideCashmereBox()}>
+        <div class="shop-cashmere">Shop Cashmere</div>
+        <div class="cashmere-options">For Women</div>
+        <div class="cashmere-options">For Men</div>
+        <div class="cashmere-options">For Girls</div>
+        <div class="cashmere-options">For Boys</div>
+        <div class="cashmere-options">For Baby</div>
+    </div>
+
+    <!-- /////////////// HOME-NAVBAR///////////////// -->
+    <div class="main-home-navbar hidden" onMouseLeave={hideHomeBox()} onMouseOver={unHideHomeBox()}>
+        <div class="main-home">
+        <div class="home-text">
+            <div>
+                <div class="home-bold">Home</div>
+                <div class="home-options" style="font-weight:bold">Shop All</div>
+                <div class="home-options" style="font-weight:bold">New Arrivals</div>
+                <div class="home-options" style="font-weight:bold">Brands We Love</div>
+                <div style="color: red; font-weight: bold;"  class="home-options">Sale</div>
+            </div>
+            <div>
+                <div class="shop-home">Shop Home</div>
+                <div class="home-options">Dining & Entertainment</div>
+                <div class="home-options">Bedding & Bath</div>
+                <div class="home-options">Candles & Fragrance</div>
+                <div class="home-options">Decor & Gifts</div>
+                <div class="home-options">Beauty & Wellness</div>
+                <div class="home-options">Home Office & Tech</div>
+                <div class="home-options">Travel & Gear</div>
+                <div class="home-options">Pets</div>
+            </div>
+        </div>
+        <div class="home-right-sidepart">
+            <div class="shop-latest">Shop The Latest</div>
+            <div class="home-images">
+                <div>
+                    <img src="https://www.jcrew.com/brand_creative/2022/202211-Nov/flyout/2022nov_1025_flyouts_home_img0.jpg">
+                    <h3>J.Crew Home in Tartans &<br>Liberty Fabrics</h3>
+                </div>
+                <div>
+                    <img src="https://www.jcrew.com/brand_creative/2022/202211-Nov/flyout/2022nov_1025_flyouts_home_img1.jpg">
+                    <h3>Colorful Glassware</h3>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- ///////////////////STORIES-NAVBAR////////////////////////////// -->
+      <div class="stories hidden" onMouseLeave={hideStoriesBox()} onMouseOver={unHideStoriesBox()}>
+        <div class="needed-stories">
+        <div class="stories-text">
+            <div>
+                <img
+                    src="https://www.jcrew.com/brand_creative/interface/logo_jc_collective_sm_nav.png?imformat=generic">
+                <h3>Meet the J.Crew Collective</h3>
+            </div>
+            <div class="women-stories">
+                <div class="stories-heading">Women's Stories</div>
+                <div class="stories-gry">THE J.CREW<br>COLLECTIVE</div>
+                <div>A Cashmere Remix with<br>Lucy Williams</div>
+                <div>Layor love with Marjon<br>Carlos</div>
+                <div class="stories-gry">COMMUNITY</div>
+                <div>A Very J.Crew Holiday</div>
+                <div>Marie Marot X J.Crew</div>
+                <div>Paula Mendoza Jewelry X<br>J.Crew</div>
+            </div>
+            <div class="Mens-stories">
+                <div class="stories-heading">Mens's Stories</div>
+                <div class="stories-gry">STYLE</div>
+                <div>Mount Snow X J.Crew with<br>NYC band Rebounder</div>
+                <div>Dress code: downtown with Nick Poe</div>
+                <div>Suiting up with Saji Abude</div>
+                <div>BEAMS PLUS X J.Crew with<br>Mike Mills</div>
+                <div class="stories-gry">COMMUNITY</div>
+                <div>Sporting life: the North Folk<br>Polar Bears Club</div>
+                <div>Tracksmith X J.Crew</div>
+                <div>Sporting life with Row NewYork</div>
+            </div>
+        </div>
+        <div class="stories-right">
+            <div class="stories-heading">Bookmark these</div>
+            <div class="stories-images">
+                <div>
+                    <img
+                        src="https://www.jcrew.com/brand_creative/2022/202213-Gift/flyout/2022gifcyb_flyout_stories_img0.jpg">
+                    <h3>Marie Marot X J.Crew</h3>
+                </div>
+                <div>
+                    <img
+                        src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1206_flyouts_stories_img1.jpg">
+                    <h3>Marie Marot X J.Crew</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ///////////////////////Sale-navbar///////////////////// -->
+    <div class="sale" onMouseLeave={hideSaleBox()} onMouseOver={unHideSaleBox()}>
+        <div class="sale-needed">
+        <div class="all-bold-sale">
+            <div class="sale-bold">Sale</div>
+            <div>Shop Women's Sale</div>
+            <div>Shop Men's Sale</div>
+            <div>Shop Girl's Sale</div>
+            <div>Shop Boy's Sale</div>
+            <div>Shop Home Sale</div>
+        </div>
+        <div class="to-be-sale">
+            <div class="sale-options">Women</div>
+            <div>Shop All</div>
+            <div>New To Sale</div>
+            <div>Over 60% Off</div>
+            <div class="sale-options">Girls</div>
+            <div>Shop All</div>
+            <div>New To Sale</div>
+            <div>Over 60% Off</div>
+        </div>
+        <div class="to-be-sale">
+            <div class="sale-options">Men</div>
+            <div>Shop All</div>
+            <div>New To Sale</div>
+            <div>Over 60% Off</div>
+            <div class="sale-options">Boys</div>
+            <div>Shop All</div>
+            <div>New To Sale</div>
+            <div>Over 60% Off</div>
+        </div>
+       </div>
+    </div>
+<!-- ////////////////////////////sign-in form////////////////////////////////////////// -->
+
+<form id="myForm">
+    <div class="sign-in-page hidden">
+        <div id="sign-in-page-text">Sign In</div>
+        <div id="cross"onClick={closeModal()} class="crossButton">x</div>
+        
+        <input type="e-mail" placeholder="Email Address" id="e-mail-signin-page"><br>
+        <input type="password" placeholder="Password" id="password-signin-page"><br>
+
+        <div class="rem-forget">
+            <div class="checkbox-align">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me" id="Remember-me">Remember me</label>
+            </div>
+            <div>
+                <span id="forget-password"> Forget Password?</span>
+            </div>
+
+        </div>
+
+        <div class="sign-in-now">SIGN IN NOW</div>
+        <p class="privacy-policy">This site is protected by reCAPTCHA and the Google<br><u>Privacy Policy</u> and <u>Terms of Service</u> apply
+        </p>
+        <hr>
+        <div class="dont-have-account">
+            <div class="dont-have-account-left">Don't have a account?</div>
+            <div class="dont-have-account-right">Sign-up now</div>
+        </div>
+    </div>
+   </form>
+
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
