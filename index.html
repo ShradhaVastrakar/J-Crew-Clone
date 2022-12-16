@@ -56,7 +56,7 @@
                 <h1 id="J-Crew">The J.Crew Gift Guide</h1>
                 <h4 id="below-j-crew">Great holiday is part of our heritage. Here's oue 2022 take...</h4>
                 <div class="shop-for-cards">
-                    <div>Shop for her</div>
+                    <div><a href="./shopforher.html" id="shop-for-her">Shop for her</a></div>
                     <div>Shop for him</div>
                     <div>Shop for girls</div>
                     <div>Shop for boys</div>
@@ -341,7 +341,7 @@
    
 
 
-    <div class="women-navbar hidden" onMouseLeave={hideWomenBox()} onMouseOver={unHideWomenBox()}>
+    <div class="women-navbar hidden DivForMargin" onMouseLeave={hideWomenBox()} onMouseOver={unHideWomenBox()}>
         <div class="all-text">
             <div>
                 <div id="make-women-text">Women</div>
@@ -439,7 +439,7 @@
 
     <!-- //New-nav-bar part -->
 
-    <div class="new-navbar hidden" onMouseLeave={hideNewBox()} onMouseOver={unHideNewBox()}>
+    <div class="new-navbar hidden DivForMargin" onMouseLeave={hideNewBox()} onMouseOver={unHideNewBox()}>
         <div class="new">
             <div>
                 <div class="to-bold">Shop New Arrivals</div>
@@ -489,7 +489,7 @@
 
     <!-- ///Gift navbarpart/// -->
 
-    <div class=" gifts-dropdown gifts-dropdown-navbar hidden" onMouseLeave={hideGiftBox()} onMouseOver={unHideGiftBox()}>
+    <div class=" gifts-dropdown gifts-dropdown-navbar hidden DivForMargin" onMouseLeave={hideGiftBox()} onMouseOver={unHideGiftBox()}>
         <div id="gifts-bold">Gifts</div>
         <div>For Women</div>
         <div>For Men</div>
@@ -500,7 +500,7 @@
    
     <!-- ////////////////Men-NAVBAR PART///////////////////////////// -->
 
-    <div class="men-navbar hidden" onMouseLeave={hideMensBox()} onMouseOver={unHideMensBox()}>
+    <div class="men-navbar hidden DivForMargin" onMouseLeave={hideMensBox()} onMouseOver={unHideMensBox()}>
         <div class="men-nav">
         <div class="alltext">
             <div>
@@ -593,7 +593,7 @@
 </div>
 
     <!-- ////////////////////////Cashmere-Navbar-part/////////////////////// -->
-    <div class="cashmere hidden" onMouseLeave={hideCashmereBox()} onMouseOver={unHideCashmereBox()}>
+    <div class="cashmere hidden DivForMargin" onMouseLeave={hideCashmereBox()} onMouseOver={unHideCashmereBox()}>
         <div class="shop-cashmere">Shop Cashmere</div>
         <div class="cashmere-options">For Women</div>
         <div class="cashmere-options">For Men</div>
@@ -603,7 +603,7 @@
     </div>
 
     <!-- /////////////// HOME-NAVBAR///////////////// -->
-    <div class="main-home-navbar hidden" onMouseLeave={hideHomeBox()} onMouseOver={unHideHomeBox()}>
+    <div class="main-home-navbar hidden DivForMargin" onMouseLeave={hideHomeBox()} onMouseOver={unHideHomeBox()}>
         <div class="main-home">
         <div class="home-text">
             <div>
@@ -643,7 +643,7 @@
 
 
       <!-- ///////////////////STORIES-NAVBAR////////////////////////////// -->
-      <div class="stories hidden" onMouseLeave={hideStoriesBox()} onMouseOver={unHideStoriesBox()}>
+      <div class="stories hidden DivForMargin" onMouseLeave={hideStoriesBox()} onMouseOver={unHideStoriesBox()}>
         <div class="needed-stories">
         <div class="stories-text">
             <div>
@@ -693,7 +693,7 @@
 </div>
 
     <!-- ///////////////////////Sale-navbar///////////////////// -->
-    <div class="sale" onMouseLeave={hideSaleBox()} onMouseOver={unHideSaleBox()}>
+    <div class="sale hidden DivForMargin" onMouseLeave={hideSaleBox()} onMouseOver={unHideSaleBox()}>
         <div class="sale-needed">
         <div class="all-bold-sale">
             <div class="sale-bold">Sale</div>
@@ -752,11 +752,45 @@
         <hr>
         <div class="dont-have-account">
             <div class="dont-have-account-left">Don't have a account?</div>
-            <div class="dont-have-account-right">Sign-up now</div>
+            <div class="dont-have-account-right" onClick={signUpPopup()}>Sign-up now</div>
         </div>
     </div>
    </form>
+<!-- ////////////////////////////sign-up-form//////////////////////////////// -->
 
+<div class="sign-up-page hidden">
+
+    <div id="sign-up-page-text">Sign Up</div>
+    <p class="cross-signup" onClick={closesignup()}>x</p>
+    
+    <input type="e-mail" placeholder="Email Address" id="e-mail-signup-page"><br>
+    <input type="password" placeholder="Password" id="password-signup-page"><br>
+    <select name="Country" id="country-select">
+        <option value="India">India</option>
+        <option value="America">America</option>
+        <option value="Sydney">Sydney</option>
+        <option value="United States">United States</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Hong Kong">Hong Kong</option>
+    </select>
+
+    <div class="remember-forget">
+        <div class="checkbox">
+            <input type="checkbox" id="remember">
+            <label for="remember-me" id="Remember">Remember me</label>
+        </div>
+
+    </div>
+
+    <div class="sign-up-now">CREATE AN ACCOUNT</div>
+    <p class="privacy">By clicking "Create an Account", you agree to our<br><u>Terms of Use</u> and <u>Privacy Policy</u>,including the<u>Use of Cookies</u>and the transfer of your personal information to the United States, a juridiction that may not provide an equivalent level of data protection to the laws in your home country. 
+    </p>
+    <hr>
+    <div class="already-have-account">
+        <div class="already-have-account-left">Already have an account?</div>
+        <div class="already-have-account-right" onClick={signInPopup()}{closesignup()}>Sign In</div>
+    </div>
+</div>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
