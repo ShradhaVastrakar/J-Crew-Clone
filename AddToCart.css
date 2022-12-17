@@ -18,12 +18,6 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 
 }
-#shopnow {
-    text-align: center;
-    padding-top: 8%;
-
-    font-family: soleil, Helvetica, Arial, sans-serif;
-}
 
 .logo {
     font-size: xx-large;
@@ -93,6 +87,72 @@
     /* border: 4px solid red; */
     margin-right: 20px;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    width: 100%;
+    background-color: rgb(240, 241, 242);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.help div,
+.Quick-links div,
+.about-j-crew div,
+.signup-line div {
+    padding: 3%;
+    cursor: pointer;
+}
+
+.help div:hover {
+    text-decoration: underline;
+}
+
+.Quick-links div:hover {
+    text-decoration: underline;
+}
+
+.about-j-crew div:hover {
+    text-decoration: underline;
+}
+
+
+.signup-line {
+    margin-right: 5%;
+}
+
+.sign-up {
+    display: flex;
+
+}
+
+#input-signup {
+    padding: 1%;
+    padding-right: 15%;
+    border: grey;
+}
+
+#signup-text {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding-right: 8%;
+    cursor: pointer;
+}
+.demo{
+    width : 100px;
+    height:100px;
+    background-color: red;
+}
+
+/* // navbar css  */
+
+
+/* *******************************GIFTS********************************************************* */
 
 .gifts-dropdown{
     padding: 1%;
@@ -726,112 +786,75 @@ font-size: 20px;
     100% {opacity:1;}
   }
 
-  /* /////////////////////////MAIN-PAGE-IMAGE///////////////////////////////////// */
-.main-container{
-    position: absolute;
-    width: 100%;
-}
-  .main-page-img{
-    padding-top: 4%;
-    width: 100%;
-    height: 300px;
-  }
-  .gift-women-text{
-    position: absolute;
-    color: white;
-    top: 30%;
-    left: 30%;
-  }
-  .giftguide-text{
-    font-size: 60px;
-    font-weight: lighter;
-    margin-left: 15%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .giftguide-para{
-   font-size: 20px;
-  }
-  .select-tag{
-    margin-top: 3%;
-    margin-left: 36%;
-    padding: 1.5% 5%;
-    cursor: pointer;
-  }
-  .best-top{
-    display: flex;
-    justify-content:space-between;
-  }
-  #best-sell{
-    padding: 1.5% 2%;
-    border: 1px solid black;
-    color: white;
-    background-color: black;
-    cursor: pointer;
-  }
-  #top-r{
-    padding: 1.5% 2%;
-    border: 1px solid black;
-    color: white;
-    background-color: black;
-    margin-right: 5%;
-    cursor: pointer;
-  }
-  /* //////////////////////SHOPPING-OPTIONS//////////////// */
-  #shopping-options{
+/* //////////////////////ADD-TO-CART//////////////////////////// */
+
+.AddToCartsShop{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     width: 100%;
-    margin-top: 8%;
-    padding: 2%;
-
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding: 3%;
+    margin: 5px;
   }
-  #shopping-options button{
-   color: wheat;
-   background-color: black;
-   margin-left: 2%;
-   padding: 1% 2%;
-   font-weight: bold;
-   cursor: pointer;
-  }
-
-
-  #shopping-options div{
-    padding: 2%;
-    border: 2px solid pink;
-    margin: 7px;
+  .AddToCartsShop div :hover{
     cursor: pointer;
-  }
-
-  #shopping-options div :hover{
     margin: 10px;
   }
 
-  #shopping-options img{
+  .AddToCartsShop img{
    width: 80%;
    padding: 4%;
   }
-   #shopping-options h2,  #shopping-options h3,  #shopping-options h4,  #shopping-options button{
+ .AddToCartsShop h2, .AddToCartsShop h3,  .AddToCartsShop h4, .AddToCartsShop button{
     padding: 1%;
     margin-left: 4%;
    }
    .select-from-shop{
-    padding: 1% 3.5%;
+    padding: 1% 3%;
     margin-top: 30%;
-    color: white;
-    background-color: black;
-    font-size: 15px;
- 
+  
    }
    .select-by-price{
+    padding: 1% 3%;
+   
+   }
+   #total{
+    margin-top: 10%;
+   }
+   #total{
+    font-family:'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-left: 5%;
+    color: brown;
+   }
+   .AddToCartsShop button{
     padding: 1% 3.2%;
     margin-top: 1%;
     color: white;
     background-color: black;
     font-size: 15px;
-    
-   }
-   /* /////////////////////addtocart///////////////////////// */
-   .addtocart-page{
-    text-decoration: none;
     cursor: pointer;
-}
+   }
+
+   #total-price{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5%;
+    padding-top: 2%;
+    color: darkmagenta;
+   
+   }
+
+   .checkoutbutton{
+    margin-top: 2%;
+    margin-left: 5%;
+    padding: 1% 2%;
+    width: 10%;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+   }

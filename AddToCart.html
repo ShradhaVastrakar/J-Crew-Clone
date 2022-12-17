@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women-Shopping</title>
+    <title>Add to Cart</title>
 </head>
-<link rel="stylesheet" href="shopforher.css">
+<link rel="stylesheet" href="AddToCart.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<script src="https://kit.fontawesome.com/a35bec21e0.js" crossorigin="anonymous"></script>
-
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://kit.fontawesome.com/a35bec21e0.js" crossorigin="anonymous"></script>
 <body>
     <nav class="navbar">
         <div class="logo">J.CREW</div>
@@ -40,10 +39,71 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         </div>
 
         <li class="sign-in" onClick={signInPopup()}>Sign In</a></li>
-        <a href="AddToCart.html" class="addtocart-page"><i class="fa-sharp fa-solid fa-bag-shopping fa-2x bag"></a></i>
+        <i class="fa-sharp fa-solid fa-bag-shopping fa-2x bag"></i>
     </div>
 </nav>
 <div id="shopnow">30% off your purchase. Use code <b>SHOPNOW</b>.</div>
+
+<!-- ****************************ADD-TO-CART************************************************ -->
+<h1 id="total">Your have total <span id="fav-total"><u>0</u></span> dresses in cart</h1>
+<h1 id="total-price">Your total is <span id="price"><u>0</u></span>$</h1>
+<div class="checkoutbutton">Click to CheckOut</div>
+
+<div class="AddToCartsShop">
+    
+<!-- ///////append here/// -->
+</div>
+
+ <!-- ********************************FOOTER*************************************************************** -->
+ <div class="footer">
+
+    <div class="help">
+        <div class="bold">Help</div>
+        <div>Customer Services</div>
+        <div>Track Order</div>
+        <div>Return & Exchanges</div>
+        <div>Shipping</div>
+        <div>International Orders</div>
+        <div>Contact</div>
+    </div>
+
+    <div class="Quick-links">
+        <div class="bold">Quick Links</div>
+        <div>Find a Store</div>
+        <div>Size Charts</div>
+        <div>Refer a Friend</div>
+        <div>Offer & Promotions</div>
+        <div>My favorites</div>
+    </div>
+
+    <div class="about-j-crew">
+        <div class="bold">About J.Crew</div>
+        <div>Our Story</div>
+        <div>Careers</div>
+        <div>Social Responsibility</div>
+        <div>California Transparency<br>Act/Modern Slavery Act</div>
+        <div>Investor Relations</div>
+        <div>Terms of Use</div>
+        <div>Privacy Policy</div>
+        <div>California Do Not Sell My<br>Personal Information</div>
+        <div>Diversity, Equity and Inclusion<br>at J.Crew Group</div>
+    </div>
+
+    <div class="signup-line">
+        <div class="bold">Like Being First?</div>
+        <div>Get can't-miss style news, before everybody else.</div>
+        <div class="sign-up">
+            <input type="e-mail" placeholder="Enter your email." id="input-signup">
+            <div id="signup-text">SIGN UP</div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ///women part  -->
+
+
 
 <div class="women-navbar hidden DivForMargin" onMouseLeave={hideWomenBox()} onMouseOver={unHideWomenBox()}>
     <div class="all-text">
@@ -495,51 +555,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <div class="already-have-account-right" onClick={signInPopup()}{closesignup()}>Sign In</div>
 </div>
 </div>
-<!-- ////////////////////////////MAIN-PAGE-IMAGE//////////////////////////////////////////////// -->
-
-<div class="main-container">
-    <img src="https://www.jcrew.com/brand_creative/homepage2022/15-Dec4/2022dec2_1213_hp_w_img0.jpg" class="main-page-img">
-    <div class="gift-women-text">
-        <h1 class="giftguide-text">The Gift Guide</h1>
-        <p class="giftguide-para">Great Hoiday present are part of our heritage. Here's our 2022 take...</p>
-        <select class="select-tag">
-            <option value="For Her">For Her</option>
-            <option value="For Him">For Him</option>
-            <option value="For Girls">For Girls</option>
-            <option value="For Boys">For Boys</option>
-            <option value="For the Home">For the Home</option>
-        </select>
-        <div class="best-top">
-            <div id="best-sell">Best Sellers</div>
-            <div id="top-r">Top Rated</div>
-        </div>
-    </div>
-</div>
-
-<div>
-    <select value="Select" class="select-from-shop">
-        <option value="">Filter By</option>
-        <option value="good">GOOD</option>
-        <option value="great">GREAT</option>
-        <option value="awesome">AWESOME</option>
-    </select>
-</div>
-
-<div>
-    <select value="price" class="select-by-price">
-        <option value="">Sort By price</option>
-        <option value="asc">Ascending</option>
-        <option value="desc">Descending</option>
-    </select>
-</div>
-<!-- ////////////////Shopping-Options-Starts////////////////////////////////////////////// -->
-
-<div id="shopping-options">
- <!-- Append here -->
-</div>
-
 
 </body>
-
 </html>
-<script src="shopforher.js"></script>
+<script src="AddToCart.js"></script>

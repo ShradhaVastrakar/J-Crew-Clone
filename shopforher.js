@@ -398,10 +398,11 @@ let dresses= [
 
 /////////////////////////SHOPPING-OPTIONS//////////////////////////
 
-let shopping_options = document.querySelector("#shopping-options");
+let shopping_options = document.querySelector("#shopping-options")
 let filterSelect = document.querySelector(".select-from-shop");
 let filterByPrice = document.querySelector(".select-by-price");
 let cart = JSON.parse(localStorage.getItem("cart-Jcrew"))||[]
+let total = document.getElementById("fav-total");
 
 filterByPrice.addEventListener("change",() =>{
   let filterPrice;
