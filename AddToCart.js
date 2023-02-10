@@ -230,6 +230,7 @@ let checkOut = document.querySelector(".checkoutbutton");
 
 checkOut.addEventListener("click", () =>{
   alert("Thankyou for shopping with Us, Your Dress will delivered within 10 Days.")
+
 })
 
 

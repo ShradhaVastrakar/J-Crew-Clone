@@ -1,9 +1,15 @@
 /* ************NAV-BAR******************************************************** */
-* {
-    margin: 0;
-    padding: 0;
+body {
+    margin: 0 !important;
+    padding: 0 ;
     font-family: Helvetica, Arial, sans-serif;
 }
+/* body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+} */
 
 .navbar {
     /* border: 1px solid red; */
@@ -94,12 +100,15 @@
 #shopnow {
     text-align: center;
     padding-top: 8%;
-
+   
     font-family: soleil, Helvetica, Arial, sans-serif;
 }
 
 .main {
     text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .banner-text {
@@ -217,7 +226,7 @@
 
 .text-4 {
     position: absolute;
-    margin-top: -200px;
+    /* margin-top: -200px; */
     margin-left: 80px;
     text-align: center;
     color: white;
@@ -393,12 +402,12 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-left: 1.5%;
+    /* margin-left: 1.5%; */
     cursor: pointer;
 }
 
 .dress-image-cards2 img {
-    width: 90%;
+    width: 70%;
     cursor: pointer;
 }
 
@@ -425,7 +434,7 @@
 }
 
 .instagram-cards {
-    width: 99%;
+    width: 95%;
     margin-left: 1.5%;
 }
 
@@ -447,7 +456,7 @@
 .footer {
     display: flex;
     justify-content: space-around;
-    padding: 3%;
+    /* padding: 3%; */
     width: 100%;
     background-color: rgb(240, 241, 242);
 }
@@ -547,7 +556,7 @@
 .main{
     display: flex;
     width: 100%;
-    padding: 3%;
+    /* padding: 3%; */
 }
 .new-navbar{
     display: flex;

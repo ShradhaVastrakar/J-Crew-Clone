@@ -173,6 +173,7 @@ function submitform(){
    
   console.log(sign_in_data)
    localStorage.setItem("SignUp",JSON.stringify(signupForm))
+   alert("Sign-Up Successfully")
 
 }
 
